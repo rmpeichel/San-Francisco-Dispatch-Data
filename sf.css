@@ -16,8 +16,7 @@
 
 /* Styling Tab Link */
 .tablink {
-  background-color: #555;
-  color: white;
+  background-image: url(sf1.jpg);
   float: left;
   border: none;
   outline: none;
@@ -39,8 +38,9 @@
  padding: 100px, 20px;
 }
 
-/* Tab Background Color */
+/* Tab Background Color 
 #Home { background-color: red; }
 #Contact { background-color: red; }
 #News { background-color: red; }
 #About { background-color: red; }
+*/
