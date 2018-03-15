@@ -35,7 +35,7 @@
   <button class="tablink" onclick="openPage('About, this, 'green')">About</button>
 
   <script language="javascript">
-    function openPage(pageName, elmnt, color)
+    function openPage(pageName, elmnt, image)
     {
       var i, tabcontent, tablinks;
       tabcontent = document.getElementsByClassName("tabcontent");
@@ -52,7 +52,7 @@
       
       document.getElementById(pageName).style.display = "block";
       
-      elmnt.style.backgroundColor = "color";
+      elmnt.style.backgroundImage = "image;
     }
     
     document.getElementById("defaultOpen").click();
