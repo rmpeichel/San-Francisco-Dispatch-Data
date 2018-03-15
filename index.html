@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<link rel="stylesheet" type="text/css" href="sf.css">
+
+<title>SF Emergency Dispatch</title>
+
+
+</head>
+
+<body>
+  <div id="Home" class="tabcontent">
+    <h3>Home</h3>
+  </div>
+  <div id="Contact" class="tabcontent">
+    <h3>Contact</h3>
+  </div>
+  <div id="News" class="tabcontent">
+    <h3>News</h3>
+  </div>
+  <div id="About" class="tabcontent">
+    <h3>About</h3>
+  </div>
+  
+  <button class="tablink" onclick="openPage('Home', this, 'red')" id="defaultOpen">Home</button>
+  <button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button>
+  <button class="tablink" onclick="openPage('News', this, 'orange')">News</button>
+  <button class="tablink" onclick="openPage('About, this, 'green')">About</button>
+  
+  <script>
+    function openPage(pageName, elmnt, color)
+    {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++)
+      {
+        tabcontent[i].style.display = "none";
+      }
+      
+      tablinks = document.getElementsByClassName("tablinks");
+      for(i = 0; i < tablinks.length; i++)
+      {
+        tablinks.style.backgroundColor = " ";
+      }
+      
+      document.getElementById(pagename).style.display = "block";
+      
+      elmnt.style.backgroundColor = "color";
+    }
+    
+    document.getElementById("defaultOpen").click();
+  </script>
+                                                                   
+                                          
+  
+  
+  
+                                  
+  
+                                  
+  
+  
+  
+  
+</body>
+
+</html>
