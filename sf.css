@@ -40,7 +40,7 @@
 }
 
 /* Tab Background Color */
-#Home { background-color: red }
-#Contact { background-color: green }
-#News { background-image: url() }
-#About { background-image: url() }
+#Home { background-image: url(sf1.jpg); }
+#Contact { background-image: url(sf2.jpg); }
+#News { background-image: url(sf3.jpg); }
+#About { background-image: url(sf4.jpg); }
