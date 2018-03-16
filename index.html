@@ -2,37 +2,37 @@
 
 <html>
 
-<head>
+  <head>
 
-<link rel="stylesheet" type="text/css" href="sf.css">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SF Emergency Dispatch</title>
+  <link rel="stylesheet" type="text/css" href="sf.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SF Emergency Dispatch</title>
 
-</head>
+  </head>
 
-<body>
+  <body>
 
-  <button class="tablink" onclick="openPage('Home', this, 'red')" id="defaultOpen">Home</button>
-  <button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button>
-  <button class="tablink" onclick="openPage('News', this, 'orange')">News</button>
-  <button class="tablink" onclick="openPage('About', this, 'green')">About</button>
+    <button class="tablink" onclick="openPage('Home', this, 'red')" id="defaultOpen">Home</button>
+    <button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button>
+    <button class="tablink" onclick="openPage('News', this, 'orange')">News</button>
+    <button class="tablink" onclick="openPage('About', this, 'green')">About</button>
 
-  <div id="Home" class="tabcontent">
-    <h3>Home</h3>
-	<p>Test</p>
-  </div>
-  <div id="Contact" class="tabcontent">
-    <h3>Contact</h3>
-	<p>Test</p>
-  </div>
-  <div id="News" class="tabcontent">
-    <h3>News</h3>
-	<p>Test</p>
-  </div>
-  <div id="About" class="tabcontent">
-    <h3>About</h3>
-	<p>Test</p>
-  </div>
+    <div id="Home" class="tabcontent">
+      <h3>Home</h3>
+	  <p>Test</p>
+    </div>
+    <div id="Contact" class="tabcontent">
+      <h3>Contact</h3>
+	  <p>Test</p>
+    </div>
+    <div id="News" class="tabcontent">
+      <h3>News</h3>
+	  <p>Test</p>
+    </div>
+    <div id="About" class="tabcontent">
+      <h3>About</h3>
+	  <p>Test</p>
+    </div>
   
   
 
@@ -42,32 +42,32 @@
   
   
   
-</body>
-<script type="text/javascript">
-function openPage(pageName, elmnt, color) {
+  </body>
+  <script type="text/javascript">
+  function openPage(pageName, elmnt, color) {
     // Hide all elements with class="tabcontent" by default */
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+      }
 
     // Remove the background color of all tablinks/buttons
-    tablinks = document.getElementsByClassName("tablink");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].style.backgroundColor = "";
-    }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].style.backgroundColor = "";
+      }
 
     // Show the specific tab content
-    document.getElementById(pageName).style.display = "block";
+      document.getElementById(pageName).style.display = "block";
 
     // Add the specific color to the button used to open the tab content
-    elmnt.style.backgroundColor = color;
+      elmnt.style.backgroundColor = color;
 }
 
 // Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
+  document.getElementById("defaultOpen").click();
 
-</script>
+  </script>
 
 </html>
