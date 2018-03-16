@@ -5,8 +5,6 @@
  
  /* Set page at 100% height */
  
- {box-sizing: border-box}
- 
  body, html {
   height: 100%;
   margin: 0;
