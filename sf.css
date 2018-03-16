@@ -39,7 +39,7 @@
  display: none;
  padding: 100px 20px;
  height: 100vh;
- box-sizing: box-padding;
+ box-sizing: border-box;
 }
 
 /* Tab Background Color */
