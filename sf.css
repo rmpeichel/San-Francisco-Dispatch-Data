@@ -17,7 +17,7 @@
 
 /* Styling Tab Link */
 .tablink {
-  background-color: black;
+  background-color: #777;
   color: white;
   float: left;
   border: none;
@@ -30,7 +30,7 @@
 
 /* Link Hover Color */
 .tablink:hover {
-  background-color: white;
+  background-color: #555;
 }
 
 /* Style Tab Content */
