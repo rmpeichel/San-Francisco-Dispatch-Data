@@ -5,12 +5,8 @@
  
  /* Set page at 100% height */
  
- body {
+ body, html {
   height: 100vh;
-  
- }
- 
- html {
   margin: 0px;
   font-family: Arial;
  }
