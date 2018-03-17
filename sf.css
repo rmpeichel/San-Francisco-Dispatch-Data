@@ -7,11 +7,12 @@
  
  body {
   height: 100vh;
-  font-family: Arial;
+  
  }
  
  html {
   margin: 0px;
+  font-family: Arial;
  }
  
 /*------------------------------------*\
