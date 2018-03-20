@@ -1,6 +1,7 @@
    /**
  * Contents
  * Navigation Bar
+ * Tab Headers
  */
  
  body, html {
@@ -43,3 +44,12 @@
 #trends { background-color: red; }
 #analysis { background-color: orange; }
 #stats { background-color: blue; }
+
+/*---------------------------------------*\
+  Tab Headers
+\*---------------------------------------*/
+
+#header {
+  align: center;
+  text-decoration: underline;
+
