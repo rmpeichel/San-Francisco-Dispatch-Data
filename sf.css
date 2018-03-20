@@ -16,7 +16,7 @@
 
 /* Styling Tab Link */
 .tablink {
-  background-color: #ffffcc;
+  background-color: #555;
   color: white;
   float: left;
   border: none;
@@ -28,7 +28,7 @@
 
 /* Link Hover Color */
 .tablink:hover {
-  background-color: #555;
+  background-color: #ffffcc;
 }
 
 /* Style Tab Content */
@@ -41,9 +41,9 @@
 }
 
 /* Tab Background Color */
-#trends { background-color: red; }
-#analysis { background-color: orange; }
-#stats { background-color: blue; }
+#trends { background-color: ffffcc; }
+#analysis { background-color: ffffcc; }
+#stats { background-color: ffffcc; }
 
 /*---------------------------------------*\
   Tab Headers
