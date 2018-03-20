@@ -42,6 +42,6 @@
 }
 
 /* Tab Background Color */
-#Home { background-color: red; }
-#News { background-color: orange; }
-#Contact { background-color: blue; }
+#trends { background-color: red; }
+#analysis { background-color: orange; }
+#correlation { background-color: blue; }
