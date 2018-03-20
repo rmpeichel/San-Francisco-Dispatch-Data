@@ -3,8 +3,6 @@
  * Navigation Bar
  */
  
- /* Set page at 100% height */
- 
  body, html {
   height: 100vh;
   margin: 0px;
@@ -42,6 +40,6 @@
 }
 
 /* Tab Background Color */
-#Home { background-color: red; }
-#News { background-color: orange; }
-#Contact { background-color: blue; }
+#Data { background-color: red; }
+#Analysis { background-color: orange; }
+#Stats { background-color: blue; }
