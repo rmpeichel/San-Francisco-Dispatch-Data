@@ -5,7 +5,6 @@
  */
  
  body, html {
-  
   margin: 0px;
   font-family: Arial;
  }
@@ -16,14 +15,15 @@
 
 /* Styling Tab Link */
 .tablink {
-  background-color: black;
-  color: white;
+  background-color: #C1E1A6;
+  color: #7D1935;
   float: left;
   border: none;
   outline: none;
   cursor: pointer;
   padding: 14px 16px;
   font-size: 17px;
+  width: 33.33%;
 }
 
 /* Link Hover Color */
@@ -41,9 +41,9 @@
 }
 
 /* Tab Background Color */
-#trends { background-color: lime; }
-#analysis { background-color: lime; }
-#stats { background-color: lime; }
+#trends { background-color: #118C4E; }
+#analysis { background-color: #118C4E; }
+#stats { background-color: #118C4E; }
 
 /*---------------------------------------*\
   Tab Headers
@@ -52,4 +52,5 @@
 #header {
   text-align: center;
   text-decoration: underline;
+
 
