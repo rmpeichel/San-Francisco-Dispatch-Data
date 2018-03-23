@@ -16,7 +16,7 @@
 /* Styling Tab Link */
 .tablink {
   background-color: #C1E1A6;
-  color: #7D1935;
+  color: #600000;
   float: left;
   border: none;
   outline: none;
@@ -28,7 +28,7 @@
 
 /* Link Hover Color */
 .tablink:hover {
-  background-color: gray;
+  background-color: #C0C0C0;
 }
 
 /* Style Tab Content */
@@ -49,8 +49,24 @@
   Tab Headers
 \*---------------------------------------*/
 
-#header {
-  text-align: center;
-  text-decoration: underline;
-
+#header { 
+ color: #C0C0C0; 
+ font-family: 'Raleway',sans-serif; 
+ font-size: 62px; 
+ font-weight: 800; 
+ line-height: 72px; 
+ margin: 0 0 24px; 
+ text-align: center; 
+ text-transform: uppercase; 
+}
+  
+#data {
+ color: #C0C0C0; 
+ font-family: 'Raleway',sans-serif; 
+ font-size: 30px; 
+ font-weight: 800; 
+ line-height: 36px; 
+ margin: 0 0 24px; 
+ text-align: left;	
+}
 
