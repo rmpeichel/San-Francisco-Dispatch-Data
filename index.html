@@ -7,7 +7,168 @@
   <link rel="stylesheet" type="text/css" href="sf.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SF Emergency Dispatch</title>
-
+  
+  <script type="text/javascript">
+  window.onload = function (){
+		var chart = new CanvasJS.Chart("chartContainer", 
+		{
+			title:{
+				text: "San Franscico Call Type Per Zip Code"
+			},
+			axisY:
+			{
+				title: "Number of Calls",
+				maximum: 1000
+			},
+			data: [
+			{
+				type: "bar",
+				showInLegend: true,
+				legendText: "Alarms",
+				color: "red",
+				dataPoints:[
+				{y: 148, label: "94102"},
+				{y: 96, label: "94103"},
+				{y: 6, label: "94104"},
+				{y: 60, label: "94105"},
+				{y: 57, label: "94107"),
+				{y: 68, label: "94108"},
+				{y: 71, label: "94109"},
+				{y: 75, label: "94110"},
+				{y: 15, label: "94111"},
+				{y: 21, label: "94112"},
+				{y: 42, label: "94114"},
+				{y: 66, label: "94115"},
+				{y: 12, label: "94116"},
+				{y: 32, label: "94117"},
+				{y: 25, label: "94118"},
+				{y: 29, label: "94121"},
+				{y: 28, label: "94122"},
+				{y: 29, label: "94123"},
+				{y: 28, label: "94124"},
+				{y: 3, label: "94127"},
+				{y: 10, label: "94129"},
+				{y: 3, label: "94130"},
+				{y: 28, label: "94131"},
+				{y: 31, label: "94132"},
+				{y: 44, label: "94133"},
+				{y: 16, label: "94134"},
+				{y: 18, label: "94158"}
+				]
+			},
+			{
+				type: "bar",
+				showInLegend: true,
+				legendText: "Citizen Assist / Service Call",
+				color: "blue",
+				dataPoints: [
+				{y: 14, label: "94102"},
+				{y: 6, label: "94103"},
+				{y: 1, label: "94104"},
+				{y: 3, label: "94105"},
+				{y: 7, label: "94107"),
+				{y: 3, label: "94108"},
+				{y: 12, label: "94109"},
+				{y: 8, label: "94110"},
+				{y: 0, label: "94111"},
+				{y: 4, label: "94112"},
+				{y: 7, label: "94114"},
+				{y: 8, label: "94115"},
+				{y: 4, label: "94116"},
+				{y: 1, label: "94117"},
+				{y: 5, label: "94118"},
+				{y: 4, label: "94121"},
+				{y: 3, label: "94122"},
+				{y: 0, label: "94123"},
+				{y: 2, label: "94124"},
+				{y: 1, label: "94127"},
+				{y: 0, label: "94129"},
+				{y: 1, label: "94130"},
+				{y: 6, label: "94131"},
+				{y: 3, label: "94132"},
+				{y: 7, label: "94133"},
+				{y: 3, label: "94134"},
+				{y: 1, label: "94158"}
+				]
+			},
+			{
+				type: "bar",
+				showInLegend: true,
+				legendText: "Electrical Hazard",
+				color: "orange",
+				dataPoints: [
+				{y: 1, label: "94102"},
+				{y: 0, label: "94103"},
+				{y: 0, label: "94104"},
+				{y: 0, label: "94105"},
+				{y: 0, label: "94107"),
+				{y: 0, label: "94108"},
+				{y: 1, label: "94109"},
+				{y: 2, label: "94110"},
+				{y: 0, label: "94111"},
+				{y: 2, label: "94112"},
+				{y: 0, label: "94114"},
+				{y: 6, label: "94115"},
+				{y: 1, label: "94116"},
+				{y: 2, label: "94117"},
+				{y: 1, label: "94118"},
+				{y: 4, label: "94121"},
+				{y: 1, label: "94122"},
+				{y: 1, label: "94123"},
+				{y: 1, label: "94124"},
+				{y: 2, label: "94127"},
+				{y: 0, label: "94129"},
+				{y: 0, label: "94130"},
+				{y: 1, label: "94131"},
+				{y: 0, label: "94132"},
+				{y: 0, label: "94133"},
+				{y: 1, label: "94134"},
+				{y: 0, label: "94158"}
+				]
+			},
+			{
+				type: "bar",
+				showInLegend: true,
+				legendText: "Elevator / Escalator Rescue",
+				color: "green",
+				dataPoints:[
+				{y: 3, label: "94102"},
+				{y: 2, label: "94103"},
+				{y: 1, label: "94104"},
+				{y: 0, label: "94105"},
+				{y: 2, label: "94107"),
+				{y: 3, label: "94108"},
+				{y: 5, label: "94109"},
+				{y: 0, label: "94110"},
+				{y: 0, label: "94111"},
+				{y: 0, label: "94112"},
+				{y: 0, label: "94114"},
+				{y: 3, label: "94115"},
+				{y: 0, label: "94116"},
+				{y: 1, label: "94117"},
+				{y: 0, label: "94118"},
+				{y: 0, label: "94121"},
+				{y: 0, label: "94122"},
+				{y: 0, label: "94123"},
+				{y: 0, label: "94124"},
+				{y: 0, label: "94127"},
+				{y: 0, label: "94129"},
+				{y: 0, label: "94130"},
+				{y: 0, label: "94131"},
+				{y: 1, label: "94132"},
+				{y: 0, label: "94133"},
+				{y: 0, label: "94134"},
+				{y: 0, label: "94158"}
+				]
+			}
+			]
+		});
+	chart.render(); /* makes the chart on screen */
+	}
+	</script>
+	<script type="text/javascript" 
+  src="https://canvasjs.com/assets/script/canvasjs.min.js">
+  </script>
   </head>
 
   <body>
@@ -20,6 +181,8 @@
     <div id="trends" class="tabcontent">
       <h1 id="header"><strong>Trends</strong></h1>
 	  <h3 id="data"><strong>Number of Calls Per Zip Code</strong></h3>
+	  <div id="chartContainer" style="height: 800px; width: 100%;">
+	  </div>
 	  <h3 id="data"><strong></strong></h3>
 	  <h3 id="data"><strong></strong></h3>
     </div>
