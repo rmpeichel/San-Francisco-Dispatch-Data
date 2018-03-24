@@ -18,7 +18,7 @@
 			axisY:
 			{
 				title: "Number of Calls",
-				maximum: 250
+				maximum: 400
 			},
 			data: [
 			{
@@ -97,35 +97,105 @@
 				legendText: "Medical Incidents",
 				color: "purple",
 				dataPoints:[
-				{y: 1, label: "94102"},
-				{y: 0, label: "94103"},
-				{y: 0, label: "94104"},
-				{y: 0, label: "94105"},
-				{y: 0, label: "94107"},
-				{y: 0, label: "94108"},
-				{y: 0, label: "94109"},
-				{y: 4, label: "94110"},
-				{y: 0, label: "94111"},
-				{y: 0, label: "94112"},
-				{y: 0, label: "94114"},
-				{y: 3, label: "94115"},
-				{y: 0, label: "94116"},
-				{y: 1, label: "94117"},
-				{y: 0, label: "94118"},
-				{y: 0, label: "94121"},
-				{y: 0, label: "94122"},
-				{y: 0, label: "94123"},
-				{y: 1, label: "94124"},
-				{y: 0, label: "94127"},
-				{y: 0, label: "94129"},
-				{y: 0, label: "94130"},
-				{y: 0, label: "94131"},
-				{y: 1, label: "94132"},
-				{y: 0, label: "94133"},
-				{y: 0, label: "94134"},
-				{y: 0, label: "94158"}
+				{y: 948, label: "94102"},
+				{y: 866, label: "94103"},
+				{y: 37, label: "94104"},
+				{y: 170, label: "94105"},
+				{y: 258, label: "94107"},
+				{y: 136, label: "94108"},
+				{y: 582, label: "94109"},
+				{y: 556, label: "94110"},
+				{y: 125, label: "94111"},
+				{y: 322, label: "94112"},
+				{y: 248, label: "94114"},
+				{y: 290, label: "94115"},
+				{y: 172, label: "94116"},
+				{y: 241, label: "94117"},
+				{y: 189, label: "94118"},
+				{y: 140, label: "94121"},
+				{y: 222, label: "94122"},
+				{y: 118, label: "94123"},
+				{y: 372, label: "94124"},
+				{y: 32, label: "94127"},
+				{y: 15, label: "94129"},
+				{y: 30, label: "94130"},
+				{y: 131, label: "94131"},
+				{y: 139, label: "94132"},
+				{y: 229, label: "94133"},
+				{y: 174, label: "94134"},
+				{y: 55, label: "94158"}
 				]
 			},
+			{
+				type: "bar",
+				showInLegend: true,
+				legendText: "Outside Fire",
+				color: "pink",
+				dataPoints:[
+				{y: 5, label: "94102"},
+				{y: 13, label: "94103"},
+				{y: 1, label: "94104"},
+				{y: 3, label: "94105"},
+				{y: 6, label: "94107"},
+				{y: 1, label: "94108"},
+				{y: 17, label: "94109"},
+				{y: 26, label: "94110"},
+				{y: 13, label: "94111"},
+				{y: 2, label: "94112"},
+				{y: 10, label: "94114"},
+				{y: 4, label: "94115"},
+				{y: 1, label: "94116"},
+				{y: 0, label: "94117"},
+				{y: 2, label: "94118"},
+				{y: 7, label: "94121"},
+				{y: 5, label: "94122"},
+				{y: 4, label: "94123"},
+				{y: 19, label: "94124"},
+				{y: 0, label: "94127"},
+				{y: 0, label: "94129"},
+				{y: 1, label: "94130"},
+				{y: 0, label: "94131"},
+				{y: 1, label: "94132"},
+				{y: 1, label: "94133"},
+				{y: 0, label: "94134"},
+				{y: 1, label: "94158"}
+				]
+			},
+			{
+				type: "bar",
+				showInLegend: true,
+				legendText: "Structure Fire",
+				color: "yellow",
+				dataPoints:[
+				{y: 191, label: "94102"},
+				{y: 87, label: "94103"},
+				{y: 27, label: "94104"},
+				{y: 13, label: "94105"},
+				{y: 32, label: "94107"},
+				{y: 24, label: "94108"},
+				{y: 65, label: "94109"},
+				{y: 56, label: "94110"},
+				{y: 10, label: "94111"},
+				{y: 64, label: "94112"},
+				{y: 32, label: "94114"},
+				{y: 48, label: "94115"},
+				{y: 13, label: "94116"},
+				{y: 98, label: "94117"},
+				{y: 36, label: "94118"},
+				{y: 13, label: "94121"},
+				{y: 27, label: "94122"},
+				{y: 14, label: "94123"},
+				{y: 32, label: "94124"},
+				{y: 50, label: "94127"},
+				{y: 0, label: "94129"},
+				{y: 0, label: "94130"},
+				{y: 10, label: "94131"},
+				{y: 10, label: "94132"},
+				{y: 66, label: "94133"},
+				{y: 10, label: "94134"},
+				{y: 2, label: "94158"}
+				]
+			}
 			]
 		});
 	chart.render(); /* makes the chart on screen */
@@ -144,7 +214,7 @@
     <div id="trends" class="tabcontent">
       <h1 id="header"><strong>Trends</strong></h1>
 	  <h3 id="data"><strong>Number of Calls Per Zip Code</strong></h3>
-	  <div id="chartContainer" style="height: 3000px; width: 100%;"></div>
+	  <div id="chartContainer" style="height: 4000px; width: 100%;"></div>
 	  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 	  <h3 id="data"><strong></strong></h3>
 	  <h3 id="data"><strong></strong></h3>
