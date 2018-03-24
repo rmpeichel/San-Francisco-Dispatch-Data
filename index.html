@@ -255,27 +255,76 @@
  			}
 			]
 		});
+		/*
+		var chart3 = new CanvasJS.Chart("chartContainer3", {
+			title: {
+				text: "Avg Response Time Per Zip Code",
+			},
+			axisY {
+				includeZero: false
+			},
+			data: [
+			{
+				type: "line",
+				
+				dataPoints: [
+				{ x: 94102},
+				{ x: 94103},
+				{ x: 94104},
+				{ x: 94105},
+				{ x: 94107},
+				{ x: 94108},
+				{ x: 94109},
+				{ x: 94110},
+				{ x: 94111},
+				{ x: 94112},
+				{ x: 94114},
+				{ x: 94115},
+				{ x: 94116},
+				{ x: 94117},
+				{ x: 94118},
+				{ x: 94121},
+				{ x: 94122},
+				{ x: 94123},
+				{ x: 94124},
+				{ x: 94127},
+				{ x: 94129},
+				{ x: 94130},
+				{ x: 94131},
+				{ x: 94132},
+				{ x: 94133},
+				{ x: 94134},
+				{ x: 94158}
+				]
+			]
+			}
+		});
+		*/
 	chart.render(); /* render bar chart */
 	chart2.render(); /* render pie chart */
+	//chart3.render(); /* render line chart */
 	}
 	</script>
 	
   </head>
 
   <body>
-
+	<!--Tab Buttons-->
     <button class="tablink" onclick="openPage('trends', this, '#118C4E')" id="defaultOpen">Trends</button>
 	<button class="tablink" onclick="openPage('analysis', this, '#118C4E')">Analysis</button>
     <button class="tablink" onclick="openPage('stats', this, '#118C4E')">Stats</button>
     
-
+	<!--Tab Content-->
     <div id="trends" class="tabcontent">
+	  <!--First Tab-->
       <h1 id="header"><strong>Trends</strong></h1>
-	  <h3 id="data"><strong>Number of Calls Per Zip Code</strong></h3>
 	  
+	  <h3 id="data"><strong>Number of Calls Per Zip Code</strong></h3>
+	  <!--Bar Chart-->
 	  <div id="chartContainer" style="height: 4000px; width: 100%;"></div>
 	  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 	  
+	  <!--Extra Info about Bar Chart-->
 	  <h4><strong>***NOTE***</strong></h4>
 	  <p><strong>***Not Included Due to Few Entries***</strong></p>
 	  <ol type="1">
@@ -298,17 +347,29 @@
 	  </ol>
 	  
 	  <h3 id="data"><strong>Percentage of Call Type</strong></h3>
+	  <!--Pie Chart-->
 	  <div id="chartContainer2" style="height: 500px; width: 100%;"></div>
 	  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 	  
-	  <h3 id="data"><strong></strong></h3>
+	  <h3 id="data"><strong>Avg Response Time Per Zip Code</strong></h3>
+	  <!--Line Chart-->
+	  <div id="chartContainer3" style="height: 500px; width: 100%;"></div>
+	  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+	  
+	  <!--Extra Info on Line Graph-->
+	<h4><strong>***NOTE***</strong></h4>
+	<ul>
+		<li>Calls With No On-Scene Time Not Included</li>
+	</ul>
     </div>
 	
+	<!--Second Tab-->
 	<div id="analysis" class="tabcontent">
       <h1 id="header"><strong>Analysis</strong></h1>
-	  <p>Test</p>
+	  <iframe src="https://www.google.com/maps/d/embed?mid=1dZc5KBdZ-beJcpRUZ39nyioOrC7ciIUP" width="640" height="480"></iframe>
     </div>
 	
+	<!--Third Tab-->
     <div id="stats" class="tabcontent">
       <h1 id="header"><strong>Stats</strong></h1>
 	  <p>Test</p>
