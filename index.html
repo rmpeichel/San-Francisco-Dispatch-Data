@@ -233,7 +233,30 @@
 			}
 			]
 		});
-	chart.render(); /* makes the chart on screen */
+		
+		var chart2 = new CanvasJS.Chart("chartContainer2", {
+			theme: "theme2",
+			title:{
+				text: "Breakdown of Call Types"
+			},
+			data: [
+			{
+				type: "pie",
+				showInLegend: true,
+				toolTipContent: "{y} - #percent %",
+				yValueFormatString: "#,###",
+				legendText: "{indexLabel}",
+				dataPoints: [
+					{ y: 2384, indexLabel: "Alarm"},
+					{ y: 392, indexLabel: "Fire"},
+					{ y: 2468, indexLabel: "Non Life-Threatning"},
+					{ y: 4752, indexLabel: "Potentially Life-Threatning"}
+				]
+ 			}
+			]
+		});
+	chart.render(); /* render bar chart */
+	chart2.render(); /* render pie chart */
 	}
 	</script>
 	
@@ -249,9 +272,35 @@
     <div id="trends" class="tabcontent">
       <h1 id="header"><strong>Trends</strong></h1>
 	  <h3 id="data"><strong>Number of Calls Per Zip Code</strong></h3>
+	  
 	  <div id="chartContainer" style="height: 4000px; width: 100%;"></div>
 	  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-	  <h3 id="data"><strong></strong></h3>
+	  
+	  <h4><strong>***NOTE***</strong></h4>
+	  <p><strong>***Not Included Due to Few Entries***</strong></p>
+	  <ol type="1">
+		<li>Electrical Hazard</li>
+		<li>Elevator / Escalator Rescue</li>
+		<li>Fuel Spill</li>
+		<li>Gas Leak (Natural and LP Gases)</li>
+		<li>Odor (Strange / Unknown</li>
+		<li>Other</li>
+		<li>Smoke Investigation (Outside)</li>
+		<li>Water Rescue</li>
+		<li>Vehicle Fire</li>
+		<li>Train / Rail Incident</li>
+		<li>Hazmat</li>
+	  </ol>
+	  <h4><strong>Train / Rail AND Water Rescues</strong></h4>
+	  <ol type"1">
+		<li>Majority of Train / Rail Incidents Occured in Zip Codes: 94105 AND 94111</li>
+		<li>Majority of Water Rescues Occured in Zip Codes: 94103, 94111, 94123, 94129 AND 94134</li>
+	  </ol>
+	  
+	  <h3 id="data"><strong>Percentage of Call Type</strong></h3>
+	  <div id="chartContainer2" style="height: 500px; width: 100%;"></div>
+	  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+	  
 	  <h3 id="data"><strong></strong></h3>
     </div>
 	

@@ -2,6 +2,7 @@
  * Contents
  * Navigation Bar
  * Tab Headers
+ * Graph Headers
  */
  
  body, html {
@@ -59,6 +60,10 @@
  text-align: center; 
  text-transform: uppercase; 
 }
+
+/*-----------------------------------------*\
+  Graph Headers/Other
+\*-----------------------------------------*/
   
 #data {
  color: #C0C0C0; 
