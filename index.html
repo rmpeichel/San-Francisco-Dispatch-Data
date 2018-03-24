@@ -257,10 +257,11 @@
 		});
 		var chart3 = new CanvasJS.Chart("chartContainer3", {
 			title: {
-				text: "Avg Response Time Per Zip Code",
+				text: "Avg Response Time Per Zip Code (minutes)",
 			},
-			axisY {
+			axisY: {
 				includeZero: false
+				xValueFormatString: "#####",
 			},
 			data: [
 			{
