@@ -108,10 +108,10 @@
  \*----------------------------------*/
   
 #secondary {
-	display: inline-block;
-	padding: 5px;
-	color: #3FFF33;
-	font-size: 25px;
+  display: inline-block;
+  padding: 5px;
+  color: #3FFF33;
+  font-size: 25px;
 }
   
 #data p {
@@ -191,11 +191,7 @@
   margin-left: 0;
   border: 1px solid #999;
 }
-.my-legend .legend-source {
-  font-size: 70%;
-  color: #999;
-  clear: both;
-}
+
 .my-legend a {
   color: #777;
 }
