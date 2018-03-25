@@ -301,9 +301,37 @@
 			}
 			]
 		});
+		var chart4 = new CanvasJS.Chart("chartContainer", {
+			title: {
+				text: "Safe Neighborhood States"
+			},
+			axisY: {
+				title: "Total Incidents"
+			},
+			legend {
+				verticalAlign: "bottom",
+				horizontalAlign: "center"
+			},
+			data: [
+			{
+				color: "#B0D0BO",
+				type: "column",
+				showInLegend: true,
+				legendMarkerType: "none",
+				legendText: "#ofCalls = Total Number of Calls",
+				dataPoints: [
+					{ x:1, y:76, label: "94104"},
+					{ x:2, y:90, label: "94127" },
+					{ x:3, y:43, label: "94127"},
+					{ x:4, y:59, label: "94130"},
+					{ x:5, y:94, label: "94158"}
+				]
+			}
+		});
 	chart.render(); /* render bar chart */
 	chart2.render(); /* render pie chart */
 	chart3.render(); /* render line chart */
+	chart4.render(); /* render column chart */
 	}
 	</script>
 	
@@ -407,20 +435,21 @@
 			</tr>
 			<tr>
 			  <td>94127</td>
-			  <td>Long Twisting and turning streets could cause confusion to responders trying to locate a specific address</td>
+			  <td>Long Twisting and turning streets could cause confusion. *Few Calls to this Zip*</td>
 			  <td>Having emergency responders to be familiar with the area</td>
 			</tr>
 			<tr>
 			  <td>94129</td>
-			  <td>Nature area with few buildings. First Responders may have difficulty locating caller or injured party</td>
+			  <td>Light Woods/Clearing. First Responders may have difficulty locating caller *Few Calls to this Zip*</td>
 			  <td>Have callers be as specific as possible with details of the situation</td>
 			</tr>
 			<tr>
 			  <td>94134</td>
-			  <td></td>
-			  <td></td>
+			  <td>Mainly Residential. lots of houses and lots of addresses to check</td>
+			  <td>Have a detailed map on hand at all times.</td>
 			</tr>
 		  </table>
+		  <p class="zips">Zips with few dispatch calls may take longer due to unfamiliarity to area</p>
 	  </div>
 	  <iframe src="https://www.google.com/maps/d/embed?mid=1dZc5KBdZ-beJcpRUZ39nyioOrC7ciIUP" width=100% height="500"></iframe>  
 	  <div class='my-legend'>
@@ -446,6 +475,8 @@
 	  <div id="main">
         <h1 id="header"><p>Stats</p></h1>
 	  </div>
+	  <div id="chartContainer4" style="height: 500px; width: 100%;"></div>
+	  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
     </div>
   
   </body>
