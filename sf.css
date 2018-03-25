@@ -17,7 +17,7 @@
 /* Styling Tab Link */
 .tablink {
   background-color: #C1E1A6;
-  color: #600000;
+  color: #118c8c;
   float: left;
   border: none;
   outline: none;
@@ -29,7 +29,7 @@
 
 /* Link Hover Color */
 .tablink:hover {
-  background-color: #C0C0C0;
+  background-color: #8c114f;
 }
 
 /* Style Tab Content */
