@@ -161,6 +161,43 @@
 #map {
 	
 }
+.heading-hazards {
+  font-weight: bold;
+}
+
+#list-hazard {
+  width: 500px;
+  background-color: #DDD;
+  padding-left: 0px;
+  list-style-type: none;
+  counter-reset: bullet;
+}
+
+.list-element-hazard::before {
+  display: inline-block;
+  box-sizing: border-box;
+  counter-increment: bullet;
+  content: counter(bullet);
+  background: #DDD;
+  margin: 0px 10px;
+  padding: 10px 0px;
+  text-align: center;
+  width: 40px;
+}
+
+.list-element-hazard {
+  padding: 5px 0px;
+  background-color: #FFF;
+}
+
+.list-element-hazard:hover {
+  border-left: solid #AAA 3px;
+  margin-left: -3px;
+}
+
+.list-element-hazard:nth-child(odd) {
+  background-color: #EEE;
+}
 
 .my-legend .legend-title {
   text-align: left;
@@ -172,7 +209,6 @@
   margin: 0;
   margin-bottom: 5px;
   padding: 0;
-  float: left;
   list-style: none;
 }
 .my-legend .legend-scale ul li {
