@@ -5,7 +5,7 @@
  * Graph Headers
  * Charts
  * Map
- * Split
+ * Observatioins
  */
  
  body, html {
@@ -233,4 +233,38 @@
   color: #777;
 }
 
+/*-----------------------*\
+  Observations
+\*-----------------------*/
+
+.section {
+  color: #DCDCDC; 
+  font-family: 'Raleway',sans-serif; 
+  font-size: 50px; 
+  font-weight: 800; 
+  line-height: 72px; 
+  margin: 0 0 24px; 
+  text-align: center; 
+  text-transform: uppercase;
+}
+
+.zips {
+  color: #f8f8f8; 
+  font-family: 'Raleway',sans-serif; 
+  font-size: 18px; 
+  font-weight: 500; 
+  line-height: 32px; 
+  margin: 0 0 24px; 
+  text-align: center;
+}
+
+.reasons {
+  color: #DCDCDC; 
+  font-family: 'Raleway',sans-serif; 
+  font-size: 30px; 
+  font-weight: 800; 
+  line-height: 36px; 
+  margin: 0 0 24px; 
+  text-align: center;
+}
 
