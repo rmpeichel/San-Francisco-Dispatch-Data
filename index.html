@@ -301,7 +301,7 @@
 			}
 			]
 		});
-		var chart4 = new CanvasJS.Chart("chartContainer", {
+		var chart4 = new CanvasJS.Chart("chartContainer4", {
 			title: {
 				text: "Safe Neighborhood States"
 			},
@@ -314,19 +314,20 @@
 			},
 			data: [
 			{
-				color: "#B0D0BO",
+				color: "#B0D0B0",
 				type: "column",
 				showInLegend: true,
 				legendMarkerType: "none",
 				legendText: "#ofCalls = Total Number of Calls",
 				dataPoints: [
-					{ x:1, y:76, label: "94104"},
-					{ x:2, y:90, label: "94127" },
-					{ x:3, y:43, label: "94127"},
-					{ x:4, y:59, label: "94130"},
-					{ x:5, y:94, label: "94158"}
+					{ x: 1, y: 76, label: "94104"},
+					{ x: 2, y: 90, label: "94127"},
+					{ x: 3, y: 43, label: "94129"},
+					{ x: 4, y: 59, label: "94130"},
+					{ x: 5, y: 94, label: "94158"}
 				]
 			}
+			]
 		});
 	chart.render(); /* render bar chart */
 	chart2.render(); /* render pie chart */
