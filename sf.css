@@ -22,8 +22,8 @@
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 14px 16px;
-  font-size: 17px;
+  padding: 10px 12px;
+  font-size: 25px;
   width: 33.33%;
 }
 
@@ -36,7 +36,7 @@
 .tabcontent {
  color: black;
  display: none;
- padding: 100px 20px;
+ padding: 25px 20px;
  height: 100%;
  box-sizing: border-box;
 }
@@ -50,22 +50,39 @@
   Tab Headers
 \*---------------------------------------*/
 
-#header { 
- color: #C0C0C0; 
- font-family: 'Raleway',sans-serif; 
- font-size: 62px; 
- font-weight: 800; 
- line-height: 72px; 
- margin: 0 0 24px; 
- text-align: center; 
- text-transform: uppercase; 
+#main {
+ background: #222222;
+ color: #3FFF33;
+ font-size: 35px;
+
 }
 
-/*-----------------------------------------*\
+#header p { 
+ text-align: center;
+ text-transform: uppercase;
+ text-shadow: 10px 10px 10px rgba(44,119,44,0.7);
+ background-image: url("http://enjoycss.com/bg-img/custom/99466-osjc5h.jpg");
+ background-position: 50% 50%;
+ -webkit-background-origin: padding-box;
+ background-origin: padding-box;
+ -webkit-background-clip: border-box;
+ background-clip: border-box;
+ -webkit-background-size: auto auto;
+ background-size: auto auto;
+ border: 7px solid rgba(15,112,4,1);
+ -webkit-border-radius: 75px / 100px;
+ border-radius: 75px / 100px;
+}
+
+ /*----------------------------------*\
   Graph Headers/Other
-\*-----------------------------------------*/
+ \*----------------------------------*/
   
-#data {
+#secondary {
+	
+}
+  
+#data p {
  color: #C0C0C0; 
  font-family: 'Raleway',sans-serif; 
  font-size: 30px; 
