@@ -6,10 +6,11 @@
 
   <link rel="stylesheet" type="text/css" href="sf.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SF Emergency Dispatch</title>
+  <title>SF Emergency Dispatch Calls</title>
 
   <script type="text/javascript">
 	window.onload = function (){
+		/* bar chart */
 		var chart = new CanvasJS.Chart("chartContainer", 
 		{
 			title:{
@@ -233,7 +234,7 @@
 			}
 			]
 		});
-		
+		/* Pie Chart */
 		var chart2 = new CanvasJS.Chart("chartContainer2", {
 			theme: "theme2",
 			title:{
@@ -255,6 +256,7 @@
  			}
 			]
 		});
+		/* Line Chart */
 		var chart3 = new CanvasJS.Chart("chartContainer3", {
 			title: {
 				text: "Avg Response Time Per Zip Code (minutes)",
@@ -301,6 +303,7 @@
 			}
 			]
 		});
+		/* Column Chart */
 		var chart4 = new CanvasJS.Chart("chartContainer4", {
 			title: {
 				text: "Safe Neighborhood States"
@@ -417,6 +420,7 @@
 	  <div id="main">
 		<h1 id="header"><p>Observations</p></h1>
 	  </div>
+	  <!--Table of Safe Neighborhood-->
 	  <div id="explanations">
 		  <h1 class="section">high dispatch / response times areas.</h1>
 		  <p class="zips">Areas That Have High Response Times: 94105, 94127, 94129, 94134</p>
@@ -456,6 +460,7 @@
 	    <p class="zips">The map below shows the latitude and longitude of each call recieved. Overall there is not a pattern to 
 		the type of units sent out. It all dependds on the needs of the person or situation.</p>
 	  </div>
+	  <!--Google Map and Legend-->
 	  <iframe src="https://www.google.com/maps/d/embed?mid=1dZc5KBdZ-beJcpRUZ39nyioOrC7ciIUP" width=100% height="500"></iframe>  
 	  <div class='my-legend'>
 	    <div class='legend-title'>Dispatch Locations of Each Unit</div>
@@ -480,6 +485,7 @@
 	  <div id="main">
         <h1 id="header"><p>Stats</p></h1>
 	  </div>
+	  <!--Main Content of Page-->
 	  <div id="explanations">
 	    <h1 class="section">The Safest Neighborhoods in San Francisco</h1>
 		<p class="zips">There are several "safe" neighborhood based of a set of dispatch data obtained. These neighborhoods have the lowest amount of 
@@ -489,6 +495,7 @@
 		<p class="zips">Crime Correlation is not directly related to the data. However certain incidents like fires, smoke investigation, and alarms can all be possible crimes
 		committed. If we look at each zip code and determine how many of these events occur we can determine the safest neighboods as shown on the previous tab.</p>
 	  </div>
+	  <!--Graph-->
 	  <div id="chartContainer4" style="height: 500px; width: 100%;"></div>
 	  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
     </div>
@@ -496,27 +503,27 @@
   </body>
   <script type="text/javascript">
     function openPage(pageName, elmnt, color) {
-    /* Hide all elements with class="tabcontent" by default */
+      /* Hide all elements with class="tabcontent" by default */
       var i, tabcontent, tablinks;
       tabcontent = document.getElementsByClassName("tabcontent");
       for (i = 0; i < tabcontent.length; i++) {
           tabcontent[i].style.display = "none";
       }
 
-    // Remove the background color of all tablinks/buttons
+      /* Remove the background color of all tablinks/buttons*/
       tablinks = document.getElementsByClassName("tablink");
       for (i = 0; i < tablinks.length; i++) {
           tablinks[i].style.backgroundColor = "";
       }
 
-    // Show the specific tab content
+      /* Show the specific tab content */
       document.getElementById(pageName).style.display = "block";
 
-    // Add the specific color to the button used to open the tab content
+      /* Add the specific color to the button used to open the tab content */
       elmnt.style.backgroundColor = color;
 }
 
-// Get the element with id="defaultOpen" and click on it
+    /* Get the element with id="defaultOpen" and click on it */
     document.getElementById("defaultOpen").click();
 	
   </script>
